@@ -30,5 +30,11 @@ int hoare_partition(int *arr, int low, int high, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 void quick_sort_h(int *array, int low, int high, size_t size);
 void insertion_sort_list(listint_t **list);
+void merge_sort(int *array, size_t size);
+void merge(int *left_array, size_t left_size, int *right_array,
+		size_t right_size, int *merged_array);
+void printArray(int *array, int array_size, char *desc);
+int *create_list(int size);
+void free_list(int *array);
 
 #endif
