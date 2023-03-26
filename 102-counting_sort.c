@@ -40,15 +40,14 @@ int *createArray(size_t size)
  */
 void counting_sort(int *array, size_t size)
 {
-	size_t k = max_int(array, size);
-	int *count = createArray(k + 1);
-	int *output_array = createArray(size), j;
-	size_t i;
+	size_t i, k;
+	int *count, *output_array, j;
 
 	if (size != 1 && array)
 	{
 		k = max_int(array, size);
 		count = createArray(k + 1);
+		output_array = createArray(size);
 
 		if (!k || !count)
 			exit(8);
