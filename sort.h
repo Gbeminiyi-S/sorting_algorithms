@@ -36,5 +36,8 @@ void merge(int *left_array, size_t left_size, int *right_array,
 void printArray(int *array, int array_size, char *desc);
 int *create_list(int size);
 void free_list(int *array);
+void counting_sort(int *array, size_t size);
+int max_int(int *array, size_t size);
+int *createArray(size_t size);
 
 #endif
