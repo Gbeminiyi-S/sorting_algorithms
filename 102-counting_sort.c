@@ -45,8 +45,13 @@ void counting_sort(int *array, size_t size)
 	int *output_array = createArray(size), j;
 	size_t i;
 
-	if (count && output_array)
+	if (size != 1 && array)
 	{
+		k = max_int(array, size);
+		count = createArray(k + 1);
+
+		if (!k || !count)
+			exit(8);
 		/* initialises the count array to 0 */
 		for (i = 0; i <= k; i++)
 			count[i] = 0;
